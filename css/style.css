@@ -1,0 +1,760 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+}
+#header{
+    height: 140px;
+}
+#banner{
+    border-top: 1px solid #111;
+    position: relative;
+}
+#contents1{
+    margin-top: 160px;
+}
+#contents2{
+    margin-top: 160px;
+    height: 778px;
+}
+#contents3{
+    margin-top: 200px;
+}
+#footer{
+    border-top: 1px solid #cacaca;
+    height: 380px;
+    margin-top: 200px;
+}
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    height: inherit;
+    
+}
+
+/* 헤더 */
+.header{}
+.header .header_menu{
+    text-align: right;
+    padding-top: 10px;
+}
+.header .header_menu > a{
+    font-size: 12px;
+    color: #424242;
+    margin-right: 20px;
+}
+.header .header_menu > a:first-child{
+    color: #f72798;
+}
+.header .header_menu > a:last-child{
+    margin-right: 0;
+}
+.header .logo{
+    float: left;
+    margin-top: 32px;
+    cursor: pointer;
+}
+.header .logo > img{}
+.header .nav{
+    float: left;
+    margin-top: 52px;
+    margin-left: 140px;
+}
+.header .nav > ul{}
+.header .nav > ul > li{
+    float: left;
+    position: relative;
+}
+.header .nav > ul > li > a{
+    font-size: 18px;
+    transition: color 0.2s;
+    padding-right: 40px;
+    /* padding: 30px 15px; */
+}
+.header .nav > ul > li > a:hover{
+    color: #f72798;
+    
+}
+.header .nav > ul > li > .submenu{
+    position: absolute;
+    z-index: 10;
+    padding-top: 40px;
+    display: none;
+}
+.header .nav > ul > li > .submenu > li{}
+.header .nav > ul > li > .submenu > li > a{
+    display: block;
+    width: 70px;
+    font-size: 15px;
+    padding: 10px 0;
+    color: #333;
+    transition: color 0.2s;
+}
+.header .nav > ul > li > .submenu > li > a:hover{
+    color: #f72798;
+}
+#navbg{
+    width: 100%;
+    height: 390px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9;
+    top: 125px;
+    left: 0;
+    display: none;
+    
+}
+.header .h_btn{
+    float: right;
+    margin-top: 52px;
+}
+
+.header .h_btn div{
+    width: 26px;
+    float: left;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.header .h_btn div:last-child{
+    margin-right: 0;
+}
+
+.header .h_btn > div > img{
+    width: 100%;
+}
+
+/* 배너 */
+.ban{}
+.ban .ban_slick{
+    width: 100%;
+    height: calc(100vh - 140px);
+}
+.ban .ban_slick.img1{
+    background-image: url(../images/banner_01.png);
+    background-size: cover;
+}
+.ban .ban_slick.img2{
+    background-image: url(../images/banner_02.png);
+    background-size: cover;
+}
+.ban .ban_slick.img3{
+    background-image: url(../images/banner_03.png);
+    background-size: cover;
+}
+.ban .ban_slick.img4{
+    background-image: url(../images/banner_04.png);
+    background-size: cover;
+}
+.ban_tit{
+    width: 1440px;
+    margin: 252px 360px;
+    color: #fff;
+}
+
+.b_tit{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 48px;
+}
+.b_desc{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+.ban .slick-prev{
+    cursor: pointer;
+    position: absolute;
+    top: 342px;
+    left: 200px;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    border: 0;
+    background: url(../images/left.png);
+
+}
+
+.ban .slick-next{
+    cursor: pointer;
+    top: 342px;
+    right: 200px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    border: 0;
+    background: url(../images/right.png);
+}
+
+.ban .slick-dots{
+    position: absolute;
+    bottom: 54px;
+    width: 100%;
+    text-align: center;
+}
+.ban .slick-dots li{
+    display: inline-block;
+    margin-right: 14px;
+}
+.ban .slick-dots li:last-child{
+    margin-right: 0;
+}
+.ban .slick-dots li button{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0,0,0,0.2);
+    border: 0;
+    text-indent: -9999px;
+    border-radius: 50%;
+}
+.ban .slick-dots .slick-active button{
+    background-color: #f72798;
+}
+
+
+/* 컨텐츠1_회원님께 추천하는 인기 아이템 */
+.contents1{}
+.contents1 .tabmenu{}
+.contents1 .tabmenu .tabbtn{}
+.contents1 .tabmenu .tabbtn > ul{}
+.contents1 .tabmenu .tabbtn > ul > li{
+    cursor: pointer;
+    width: 100px;
+    height: 44px;
+    background-color: #eee;
+    float: left;
+    margin-right: 4px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+}
+.contents1 .tabmenu .tabbtn > ul > li.active{
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+.contents1 .tabmenu .tabcont{
+    margin-top: 20px;
+}
+.feminine01{}
+.feminine01 > div, .feminine02 > div, .feminine03 > div, .casual01 > div, .casual02 > div, .casual03 > div, .street01 > div, .street02 > div{
+    float: left;
+    margin-right: 20px;
+}
+.feminine01 > div:last-child{
+    margin-right: 0;
+}
+
+.feminine02 > div:last-child{
+    margin-right: 0;
+}
+
+.feminine03 > div:last-child{
+    margin-right: 0;
+}
+
+.casual01 > div:last-child{
+    margin-right: 0;
+}
+
+.casual02 > div:last-child{
+    margin-right: 0;
+}
+
+.casual03 > div:last-child{
+    margin-right: 0;
+}
+
+.street01 > div:last-child{
+    margin-right: 0;
+}
+
+.street02 > div:last-child{
+    margin-right: 0;
+}
+
+.text_wrap > .tit_info{
+    margin-top: 14px;
+}
+
+.img_wrap{
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.img_wrap > img:first-child{
+    transition: all 0.3s;
+}
+.img_wrap > img:first-child:hover{
+    transform: scale(1.07);
+}
+.like{
+    width: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.fill_like{
+    width: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.fill_like:hover{
+    opacity: 1;
+}
+
+.contents1 .slick-prev{
+    width: 38px;
+    height: 38px;
+    background: url(../images/c_left.png);
+    text-indent: -9999px;
+    border: 0;
+    position: absolute;
+    top: -58px;
+    right: 0;
+    z-index: 10;
+    margin-right: 37px;
+    cursor: pointer;
+}
+.contents1 .slick-next{
+    width: 38px;
+    height: 38px;
+    background: url(../images/c_right.png);
+    text-indent: -9999px;
+    border: 0;
+    position: absolute;
+    top: -58px;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* 컨텐츠2_지금 떠오르는 브랜드 */
+.contents2{}
+
+.contents2 div{}
+.contents2 .nb_01{
+    float: left;
+    margin-right: 20px;
+}
+
+.contents2 .brand_tit, .contents2 .brand_tit2, .contents2 .brand_tit3{
+    position: relative;
+}
+.contents2 .brand_tit::before{
+    content: "앳코너";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+.contents2 .brand_tit::after{
+    content: "# 페미닌 데이트룩 ~40%";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contents2 > .nb_01 > div:last-child{
+    margin-top: 20px;
+}
+
+.nb_info{
+    width: 345px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nb_info > span{
+    display: block;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 345px;
+    height: 710px;
+    top: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.nb_info:hover span{
+    opacity: 1;
+}
+.nb_info:hover .nb_text_wrap{
+    opacity: 1;
+}
+
+.nb_info > .nb_text_wrap{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+
+
+.nb_info2{
+    cursor: pointer;
+}
+.nb_info2 .nb_wrap3{
+    position: relative;
+}
+.nb_info2 .nb_wrap3:hover > .nb_text_wrap{
+    opacity: 1;
+}
+
+.nb_info2 .nb_wrap3 > .nb_text_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 345px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 20px;
+}
+.nb_info2 .nb_wrap4{
+    position: relative;
+}
+.nb_info2 .nb_wrap4 > .nb_text_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 345px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 20px;
+}
+.nb_info2 .nb_wrap4:hover > .nb_text_wrap{
+    opacity: 1;
+}
+
+.contents2 .nb_02{
+    float: left;
+    margin-right: 20px;
+}
+.contents2 .brand_tit2::before{
+    content: "메종 키츠네";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+.contents2 .brand_tit2::after{
+    content: "# 모던 데일리룩 ~30%";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contents2 .nb_02:nth-of-type(3){
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.contents2 .nb_03{
+    float: left;
+    margin-right: 20px;
+}
+.contents2 .brand_tit3::before{
+    content: "어반디";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+.contents2 .brand_tit3::after{
+    content: "# 영 캐주얼 ~50%";
+    display: block;
+    padding: 2px 26px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 62px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contents2 .nb_03:nth-of-type(3){
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.contents2 .slick-prev{
+    width: 38px;
+    height: 38px;
+    background: url(../images/c_left.png);
+    text-indent: -9999px;
+    border: 0;
+    position: absolute;
+    top: -58px;
+    right: 0;
+    z-index: 10;
+    margin-right: 37px;
+    cursor: pointer;
+}
+.contents2 .slick-next{
+    width: 38px;
+    height: 38px;
+    background: url(../images/c_right.png);
+    text-indent: -9999px;
+    border: 0;
+    position: absolute;
+    top: -58px;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* 컨텐츠3_월간매거진 */
+.magazine_slide{
+}
+.magazine_slide .magazine_wrap{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    width: 710px;
+    cursor: pointer;
+    
+}
+.magazine_slide .magazine_wrap:hover img{
+    opacity: 1;
+}
+.magazine_slide .magazine_wrap:hover .mz_text_wrap > p{
+    opacity: 1;
+}
+.magazine_slide .magazine_wrap .mz_img_wrap{}
+.magazine_slide .magazine_wrap .mz_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+.magazine_slide .magazine_wrap .mz_text_wrap{}
+.magazine_slide .magazine_wrap .mz_text_wrap p{
+    display: block;
+    font-size: 24px;
+    color: #f6f6f6;
+    position: absolute;
+    bottom: 40px;
+    left: 44px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* 푸터 */
+.footer{
+    display: flex;
+}
+.footer > article{
+    margin-top: 50px;
+}
+.footer .f_info{
+    width: 600px;
+    color: #9e9e9e;
+    font-size: 14px;
+    margin-right: 250px;
+}
+.footer .f_info > h5{}
+.footer .f_info > p{
+    line-height: 1.7;
+    margin-top: 20px;
+}
+.footer .f_info > p > span{
+    position: relative;
+    margin-right: 20px;
+}
+.footer .f_info > p > span::after{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: #d4d4d4;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -12px;
+}
+.footer .f_info > p > span:last-child::after, .footer .f_info > p > span:first-child::after{
+    display: none;
+}
+
+.footer .f_info > span{
+    margin-top: 14px;
+    display: block;
+}
+.footer .f_nav01{
+    width: 170px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.footer .f_nav01 > ul{}
+.footer .f_nav01 > ul > li{}
+.footer .f_nav01 > ul > li > a{
+    font-weight: bold;
+}
+.footer .f_nav01 > ul > li > ul{
+    margin-top: 28px;
+}
+.footer .f_nav01 > ul > li > ul > li{
+    margin-bottom: 16px;
+}
+.footer .f_nav01 > ul > li > ul > li > a{
+    color: #9e9e9e;
+}
+.footer .f_nav02{
+    width: 170px;
+    margin-right: 65px;
+    font-size: 14px;
+}
+.footer .f_nav02 > ul{}
+.footer .f_nav02 > ul > li{}
+.footer .f_nav02 > ul > li > a{
+    font-weight: bold;
+}
+.footer .f_nav02 > ul > li > ul{
+    margin-top: 28px;
+}
+.footer .f_nav02 > ul > li > ul > li{
+    margin-bottom: 16px;
+}
+.footer .f_nav02 > ul > li > ul > li > a{
+    color: #9e9e9e;
+}
+.footer .f_sns{
+    width: 180px;
+}
+.footer .f_sns > p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer .f_sns > span{
+    display: block;
+    margin-top: 22px;
+}
+.footer .f_sns > span > em{
+    font-size: 14px;
+    color: #9e9e9e;
+    text-align: justify;
+    line-height: 1.7;
+}
+.footer .f_sns > em{
+    display: flex;
+    margin-top: 42px;
+    margin-left: 2px;
+}
+.footer .f_sns > em > a{
+    margin-right: 14px;
+    float: left;
+}
+.footer .f_sns > em > a > img{
+    width: 32px;
+}
+
+.popup_slide{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: 20px;
+    right: 230px;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.popup_slide .popup{
+    position: relative;
+    cursor: pointer;
+}
+.popup_slide .popup .pop_img_wrap{}
+.popup_slide .popup .pop_img_wrap img{}
+.popup_slide .popup .pop_text_wrap{
+    position: absolute;
+    top: 62px;
+    left: 32px;
+}
+.popup_slide .popup .pop_text_wrap .pop_brand{
+    font-size: 14px;
+}
+
+
+.popup_slide .popup .pop_text_wrap .pop_tit{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.popup_slide .popup .pop_text_wrap_02{
+    position: absolute;
+    top: 62px;
+    left: 32px;
+}
+.pop_text_wrap_02{}
+.pop_text_wrap_02 .pop_brand_02{
+    font-weight: normal;
+    color: #fff;
+    font-size: 14px;
+}
+.pop_text_wrap_02 .pop_tit_02{
+    font-weight: normal;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+.close{
+    display: block;
+    width: 400px;
+    height: 46px;
+    background-color: #111;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #f6f6f6;
+    text-align: center;
+    line-height: 46px;
+}

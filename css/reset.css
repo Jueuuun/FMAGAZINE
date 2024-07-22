@@ -1,0 +1,126 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font-family: "Open Sans", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+.clearfix::after, .clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+em{
+    font-style: normal;
+}
+
+/* margin, padding */
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt50 {margin-top: 50px !important;}
+
+
+
+
+.brand{
+    font-size: 14px;
+    font-weight: 700;
+}
+.name{
+    display: block;
+    font-size: 14px;
+    color: #121212;
+    margin-top: 6px;
+}
+
+.before_price{
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 12px;
+    text-decoration: line-through;
+}
+.sale{
+    color: #f72798;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 6px;
+}
+.price{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+
+.nb_brand{
+    font-size: 14px;
+    font-weight: normal;
+    color: #f6f6f6;
+}
+.nb_name{
+    display: block;
+    font-size: 14px;
+    color: #f6f6f6;
+    margin-top: 6px;
+}
+
+.nb_before_price{
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 12px;
+    text-decoration: line-through;
+}
+.nb_sale{
+    color: #ff99d0;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 6px;
+}
+.nb_price{
+    color: #f6f6f6;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.h4{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
